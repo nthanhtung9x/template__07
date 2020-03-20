@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #009688;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+.grid {
+    display:block;
+    width: 100%;
+}
+
+.wide {
+    width:1200px;
+    max-width: 90%;
+    margin:0 auto;
+}
+
+.row {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+@keyframes menuBtn {
+    0% {transform: scale(0.8); opacity:0;}
+    50% {opacity:1;}
+    100% {transform: scale(1.2);opacity: 0;}
+}
+
+@keyframes showMenu {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hiddenMenu {
+    from{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes angle {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(2px);}
+    100%{transform: translateY(0px);}
+}
+
+@keyframes textSlide1 {
+    0% {transform: translateX(100%);opacity: 0;}
+    20% {transform: translateX(75%);opacity: 0;}
+    30% {transform: translateX(50%);opacity: 0;}
+    50% {transform: translateX(25%);opacity: 0;}
+    60% {transform: translateX(15%);opacity: 0;}
+    75% {transform: translateX(0%);opacity: 0.6;}
+    85% {transform: translateX(-4%);opacity: 0.8;}
+    90% {transform: translateX(-2%);opacity: 0.9;}
+    100% {transform: translateX(0%);opacity: 1;}
+}
+
+@keyframes textSlide2 {
+    0% {transform: translateY(100%);opacity: 0;}
+    10% {transform: translateY(90%);opacity: 0.1;}
+    20% {transform: translateY(80%);opacity: 0.2;}
+    30% {transform: translateY(70%);opacity: 0.3;}
+    40% {transform: translateY(60%);opacity: 0.4;}
+    50% {transform: translateY(50%);opacity: 0.5;}
+    60% {transform: translateY(40%);opacity: 0.6;}
+    70% {transform: translateY(30%);opacity: 0.7;}
+    80% {transform: translateY(20%);opacity: 0.7;}
+    80% {transform: translateY(10%);opacity: 0.7;}
+    85% {transform: translateY(0%);opacity: 0.8;}
+    90% {transform: translateY(-10%);opacity: 0.8;}
+    95% {transform: translateY(-5%);opacity: 0.9;}
+    100% {transform: translateY(0%);opacity: 1;}
+}
+
+@keyframes iconAngle {
+    0% {transform: translateX(2px);}
+    50% {transform: translateX(0px);}
+    100%{transform: translateX(2px);}
+}
+
+@keyframes topDown {
+    0% {transform: translateY(-100%);opacity: 0;}
+    10% {transform: translateY(-90%);opacity: 0;}
+    20% {transform: translateY(-80%);opacity: 0;}
+    30% {transform: translateY(-70%);opacity: 0;}
+    40% {transform: translateY(-60%);opacity: 0;}
+    50% {transform: translateY(-50%);opacity: 0.5;}
+    60% {transform: translateY(-40%);opacity: 0.6;}
+    70% {transform: translateY(-30%);opacity: 0.7;}
+    80% {transform: translateY(-20%);opacity: 0.7;}
+    80% {transform: translateY(-10%);opacity: 0.7;}
+    85% {transform: translateY(0%);opacity: 0.8;}
+    90% {transform: translateY(5%);opacity: 0.8;}
+    95% {transform: translateY(5%);opacity: 0.9;}
+    100% {transform: translateY(0%);opacity: 1;}
+}
+
+@keyframes bottomDown {
+    0% {transform: translateY(100%);opacity: 0;}
+    10% {transform: translateY(90%);opacity: 0;}
+    20% {transform: translateY(80%);opacity: 0;}
+    30% {transform: translateY(70%);opacity: 0;}
+    40% {transform: translateY(60%);opacity: 0;}
+    50% {transform: translateY(50%);opacity: 0.5;}
+    60% {transform: translateY(40%);opacity: 0.6;}
+    70% {transform: translateY(30%);opacity: 0.7;}
+    80% {transform: translateY(20%);opacity: 0.7;}
+    80% {transform: translateY(10%);opacity: 0.7;}
+    85% {transform: translateY(0%);opacity: 0.8;}
+    90% {transform: translateY(-5%);opacity: 0.8;}
+    95% {transform: translateY(-5%);opacity: 0.9;}
+    100% {transform: translateY(0%);opacity: 1;}
+}
+
+@keyframes lineHeightDown {
+    0% {line-height:1.6}
+    50% {line-height:1.8}
+    100% {line-height:2}
+}
+
+
+@keyframes lineHeightTop {
+    0% {line-height:2}
+    50% {line-height:1.8}
+    100% {line-height:1.6}
+}
