@@ -49,16 +49,6 @@ function showMenu() {
         bg.className = bg.className.replace(' bg__show','');
     }
 }
-
-window.onclick = function(){
-    var bg = document.getElementsByClassName('bg__menu')[0];
-    var menu = document.getElementsByClassName('menu__wrap')[0];
-    if(this.event.target == bg){
-        bg.className = bg.className.replace(' bg__show','');
-        menu.className = menu.className.replace(' menu__show','');
-    }
-}
-
 //show item menu 
 
 function showItem(){
@@ -73,4 +63,97 @@ function showItem(){
     }
 }
 
+window.onclick = function(){
+    var bg = document.getElementsByClassName('bg__menu')[0];
+    var menu = document.getElementsByClassName('menu__wrap')[0];
+    var bg__modal = document.getElementsByClassName('modal__collapse')[0];
+    var modal = document.getElementsByClassName('modal__book')[0];
 
+    var preview = document.getElementsByClassName('modal__preview')[0];
+    var bg__preview = document.getElementsByClassName('modal__preview__collapse')[0];
+  
+    if(this.event.target == bg){
+        bg.className = bg.className.replace(' bg__show','');
+        menu.className = menu.className.replace(' menu__show','');
+    }
+    else if(this.event.target == bg__modal){
+        modal.className = modal.className.replace(' modal__show','');
+    }
+    else if(this.event.target == bg__preview){
+        preview.className = preview.className.replace(' modal__preview__show','');
+
+    }
+}
+
+
+// modal
+
+function closeModal(){
+    var modal = document.getElementsByClassName('modal__book')[0];
+    modal.className = modal.className.replace(' modal__show','');
+}
+
+function showModal(){
+    var modal = document.getElementsByClassName('modal__book')[0];
+    if(modal.className.indexOf(' modal__show') == -1){
+        modal.className += ' modal__show';
+    }else {
+        modal.className = modal.className.replace(' modal__show','');
+    }
+}
+
+// preview
+
+function showPreview(){
+    var modal = document.getElementsByClassName('modal__preview')[0];
+    if(modal.className.indexOf(' modal__preview__show') == -1){
+        modal.className += ' modal__preview__show';
+    }else {
+        modal.className = modal.className.replace(' modal__preview__show','');
+    }
+}
+
+function closePreview(){
+    var preview = document.getElementsByClassName('modal__preview')[0];
+    preview.className = preview.className.replace(' modal__preview__show','');
+}
+
+// show item preview
+
+var indexView = 0;
+
+function currentView(index) {
+    indexView = index;
+    changeView();
+}
+
+
+function changeView(){
+    var item = document.getElementsByClassName('preview__img');
+    var img = document.getElementsByClassName('preview__item__img');
+    for(var i = 0; i < item.length; i++){
+        item[i].style.display = 'none';
+    }
+
+    for(var i = 0; i < img.length; i++){
+        img[i].className = img[i].className.replace(' active','');
+    }
+
+    if(indexView >= item.length){
+        indexView = 0;
+    }
+    if(indexView < 0){
+        indexView = item.length - 1;
+    }
+
+    item[indexView].style.display = 'block';
+    img[indexView].className += ' active';
+}
+
+function plusView(val) {
+    indexView += val;
+    console.log(indexView);
+    changeView();
+}
+
+changeView();

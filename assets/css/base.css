@@ -113,9 +113,9 @@ html {
     70% {transform: translateY(-30%);opacity: 0.7;}
     80% {transform: translateY(-20%);opacity: 0.7;}
     80% {transform: translateY(-10%);opacity: 0.7;}
-    85% {transform: translateY(0%);opacity: 0.8;}
-    90% {transform: translateY(5%);opacity: 0.8;}
-    95% {transform: translateY(5%);opacity: 0.9;}
+    85% {transform: translateY(-5%);opacity: 0.8;}
+    90% {transform: translateY(-5%);opacity: 0.8;}
+    95% {transform: translateY(0%);opacity: 0.9;}
     100% {transform: translateY(0%);opacity: 1;}
 }
 
@@ -147,4 +147,12 @@ html {
     0% {line-height:2}
     50% {line-height:1.8}
     100% {line-height:1.6}
+}
+
+@keyframes skew {
+    0% {transform: skewX(0deg);}
+    25% {transform: skewX(5deg);}
+    75% {transform: skewX(-5deg);}
+    100% {transform: skewX(0deg);}
+
 }

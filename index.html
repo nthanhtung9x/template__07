@@ -95,39 +95,43 @@
                         <div class="special__heading">Hot Book</div>
                         <div class="row">
                             <div class="col l-6 m-6 c-12">
-                                <div class="special__room__img">
-                                    <h4 class="special__room__heading">Luxury Room</h4>
-                                    <p class="special__room__text">
-                                        <i class="special__room__icon fas fa-angle-right"></i>
-                                        Nội thất sang trọng
-                                    </p>
-                                    <p class="special__room__text">
-                                        <i class="special__room__icon fas fa-angle-right"></i>
-                                        View biển tuyệt đẹp
-                                    </p>
-                                    <p class="special__room__text">
-                                        <i class="special__room__icon fas fa-angle-right"></i>
-                                        Giá phòng: <span class="special__room__price">2000$</span>
-                                    </p>
-                                    <button class="special__room__btn">Đặt Phòng</button>
+                                <div class="special__room__img" >
+                                    <a href="#room__img1" id="room__img1" class="special__room__control">
+                                        <h4 class="special__room__heading">Luxury Room</h4>
+                                        <p class="special__room__text">
+                                            <i class="special__room__icon fas fa-angle-right"></i>
+                                            Nội thất sang trọng
+                                        </p>
+                                        <p class="special__room__text">
+                                            <i class="special__room__icon fas fa-angle-right"></i>
+                                            View biển tuyệt đẹp
+                                        </p>
+                                        <p class="special__room__text">
+                                            <i class="special__room__icon fas fa-angle-right"></i>
+                                            Giá phòng: <span class="special__room__price">2000$</span>
+                                        </p>
+                                        <button class="special__room__btn" onclick="showModal()">Đặt Phòng</button>
+                                    </a>    
                                 </div>
                             </div>
                             <div class="col l-6 m-6 c-12">
                                 <div class="special__room__img special__room-2">
-                                    <h4 class="special__room__heading">Gold Room</h4>
-                                    <p class="special__room__text">
-                                        Không gian ấm áp, gia đình
-                                        <i class="special__room__icon fas fa-angle-left"></i>
-                                    </p>
-                                    <p class="special__room__text">
-                                        View nhìn toàn cảnh
-                                        <i class="special__room__icon fas fa-angle-left"></i>
-                                    </p>
-                                    <p class="special__room__text">
-                                        Giá phòng: <span class="special__room__price">1000$</span>
-                                        <i class="special__room__icon fas fa-angle-left"></i>
-                                    </p>
-                                    <button class="special__room__btn">Đặt Phòng</button>
+                                    <a href="#room__img2"  id="room__img2" class="special__room__control special__room__control2">
+                                        <h4 class="special__room__heading">Gold Room</h4>
+                                        <p class="special__room__text">
+                                            Không gian ấm áp, gia đình
+                                            <i class="special__room__icon fas fa-angle-left"></i>
+                                        </p>
+                                        <p class="special__room__text">
+                                            View nhìn toàn cảnh
+                                            <i class="special__room__icon fas fa-angle-left"></i>
+                                        </p>
+                                        <p class="special__room__text">
+                                            Giá phòng: <span class="special__room__price">1000$</span>
+                                            <i class="special__room__icon fas fa-angle-left"></i>
+                                        </p>
+                                        <button class="special__room__btn" onclick="showModal()">Đặt Phòng</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -226,8 +230,8 @@
                                             Sức chứa: <span class="product__count">1-2 người</span>
                                         </p>
                                         <p class="product__text">Giá: 2000$</p>
-                                        <a class="product__book">Book</a>
-                                        <a class="product__review">Preview</a>
+                                        <a class="product__book" onclick="showModal()">Book</a>
+                                        <a class="product__review" onclick="showPreview()">Preview</a>
                                         <span class="product__sale">Giảm giá</span>
                                     </div>
                                 </div>
@@ -242,8 +246,8 @@
                                             Sức chứa: <span class="product__count">1-2 người</span>
                                         </p>
                                         <p class="product__text">Giá: 1000$</p>
-                                        <a class="product__book">Book</a>
-                                        <a class="product__review">Preview</a>
+                                        <a class="product__book" onclick="showModal()">Book</a>
+                                        <a class="product__review" onclick="showPreview()">Preview</a>
                                     </div>
                                 </div>
 
@@ -257,8 +261,8 @@
                                             Sức chứa: <span class="product__count">10-12 người</span>
                                         </p>
                                         <p class="product__text">Giá: 500$</p>
-                                        <a class="product__book">Book</a>
-                                        <a class="product__review">Preview</a>
+                                        <a class="product__book" onclick="showModal()">Book</a>
+                                        <a class="product__review" onclick="showPreview()">Preview</a>
                                         <span class="product__sale">Giảm giá</span>
                                     </div>
                                 </div> 
@@ -273,8 +277,8 @@
                                             Sức chứa: <span class="product__count">10-12 người</span>
                                         </p>
                                         <p class="product__text">Giá: 500$</p>
-                                        <a class="product__book">Book</a>
-                                        <a class="product__review">Preview</a>
+                                        <a class="product__book" onclick="showModal()">Book</a>
+                                        <a class="product__review" onclick="showPreview()">Preview</a>
                                         <span class="product__sale">Giảm giá</span>
                                     </div>
                                 </div>
@@ -289,8 +293,8 @@
                                             Sức chứa: <span class="product__count">10-12 người</span>
                                         </p>
                                         <p class="product__text">Giá: 500$</p>
-                                        <a class="product__book">Book</a>
-                                        <a class="product__review">Preview</a>
+                                        <a class="product__book" onclick="showModal()">Book</a>
+                                        <a class="product__review" onclick="showPreview()">Preview</a>
                                         <span class="product__sale">Giảm giá</span>
                                     </div>
                                 </div>
@@ -374,8 +378,90 @@
             </div>
         </footer>
 
+        <div class="modal__book">
+            <div class="modal__collapse"></div>
+            <div class="modal__wrapper">
+                <div class="grid">
+                    <div class="wide">
+                        <div class="modal__main">
+                            <div class="modal__heading">
+                                Booking 
+                                <span class="modal__heading__text">!!!</span>
+                            </div>
+                            <form action="" class="modal__form">
+                                <p class="modal__text">Tên người đặt:</p>
+                                <input type="text" class="modal__input" placeholder="Nhập đầy đủ họ tên">
+                                <p class="modal__text">Ngày Check-in:</p>
+                                <input type="datetime-local" class="modal__input" placeholder="Nhập đầy đủ họ tên">
+                                <p class="modal__text">Ngày Check-out:</p>
+                                <input type="datetime-local" class="modal__input" placeholder="Nhập đầy đủ họ tên">
+                                <p class="modal__text">Thanh Toán: 
+                                    <span class="modal__price">2000$</span>
+                                </p>
+                                <button class="modal__btn" type="submit">Đặt phòng</button>
+                            </form>
+                            <span class="modal__close" onclick="closeModal()">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="modal__preview">
+            <div class="modal__preview__collapse"></div>
+            <div class="modal__preview__wrapper">
+                <div class="grid">
+                    <div class="wide">
+                        <div class="preview">
+                            <div class="preview__img">
+                                <img src="./assets/images/room1.jpg" alt="">
+                            </div>
+                            <div class="preview__img">
+                                <img src="./assets/images/room2.jpg" alt="">
+                            </div>
+                            <div class="preview__img">
+                                <img src="./assets/images/gold.jpg" alt="">
+                            </div>
+                            <div class="preview__img">
+                                <img src="./assets/images/luxury.jpg" alt="">
+                            </div>
 
+                            <div class="preview__item c-0">
+                                <div class="row sm-gutter preview__row">
+                                    <div class="col l-3 m-3 sm-gutter preview__item__img">
+                                        <img src="./assets/images/room1.jpg" alt="" onclick="currentView(0)">
+                                    </div>
+                                    <div class="col l-3 m-3 sm-gutter preview__item__img">
+                                        <img src="./assets/images/room2.jpg" alt="" onclick="currentView(1)">
+                                    </div>
+                                    <div class="col l-3 m-3 sm-gutter preview__item__img">
+                                        <img src="./assets/images/gold.jpg" alt="" onclick="currentView(2)">
+                                    </div>
+                                    <div class="col l-3 m-3 sm-gutter preview__item__img">
+                                        <img src="./assets/images/luxury.jpg" alt="" onclick="currentView(3)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="control control__prev control__preview" onclick="plusView(-1)">
+                                <i class="control__icon fas fa-angle-left"></i>
+                            </a>
+                            <a class="control control__next control__preview" onclick="plusView(1)">
+                                <i class="control__icon fas fa-angle-right"></i>
+                            </a>
+
+                            <a class="control__btn control__preview__btn" onclick="closePreview()">
+                                <i class="btn__icon far fa-times-circle"></i>
+                            </a>
+                            
+
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
     </div>
 
     <script src="./assets/js/index.js"></script>
