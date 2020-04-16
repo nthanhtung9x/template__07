@@ -1,3 +1,3 @@
 # template__07
 theme: book hotel
-link demo: nthanhtung9x.github.io/template__07
+link demo: http://nthanhtung9x.github.io/template__07
